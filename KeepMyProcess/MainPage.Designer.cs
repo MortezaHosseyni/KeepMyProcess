@@ -31,10 +31,11 @@
             this.components = new System.ComponentModel.Container();
             DevExpress.XtraBars.Bar bar_TopBar;
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainPage));
-            this.barManager = new DevExpress.XtraBars.BarManager(this.components);
             this.bbi_Data = new DevExpress.XtraBars.BarButtonItem();
             this.ppm_Data = new DevExpress.XtraBars.PopupMenu(this.components);
-            this.bbi_Help = new DevExpress.XtraBars.BarButtonItem();
+            this.btn_BackupLocations = new DevExpress.XtraBars.BarButtonItem();
+            this.btn_OnlineStorages = new DevExpress.XtraBars.BarButtonItem();
+            this.barManager = new DevExpress.XtraBars.BarManager(this.components);
             this.bar_BottomBar = new DevExpress.XtraBars.Bar();
             this.ctx_Status = new DevExpress.XtraBars.BarStaticItem();
             this.pgb_StatusProgress = new DevExpress.XtraBars.BarEditItem();
@@ -44,59 +45,30 @@
             this.barDockControlLeft = new DevExpress.XtraBars.BarDockControl();
             this.barDockControlRight = new DevExpress.XtraBars.BarDockControl();
             this.barSubItem1 = new DevExpress.XtraBars.BarSubItem();
-            this.barButtonItem3 = new DevExpress.XtraBars.BarButtonItem();
-            this.repositoryItemPopupContainerEdit1 = new DevExpress.XtraEditors.Repository.RepositoryItemPopupContainerEdit();
-            this.btn_BackupLocations = new DevExpress.XtraBars.BarButtonItem();
-            this.btn_OnlineStorages = new DevExpress.XtraBars.BarButtonItem();
+            this.bbi_Help = new DevExpress.XtraBars.BarButtonItem();
             this.ppm_Help = new DevExpress.XtraBars.PopupMenu(this.components);
             this.btn_About = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem3 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem7 = new DevExpress.XtraBars.BarButtonItem();
+            this.repositoryItemPopupContainerEdit1 = new DevExpress.XtraEditors.Repository.RepositoryItemPopupContainerEdit();
             this.rtb_Logs = new System.Windows.Forms.RichTextBox();
             this.ilb_GamesList = new DevExpress.XtraEditors.ImageListBoxControl();
             this.htmlTemplate1 = new DevExpress.Utils.Html.HtmlTemplate();
             this.pnl_Buttons = new DevExpress.XtraEditors.SidePanel();
-            this.btn_AddGame = new DevExpress.XtraEditors.SimpleButton();
-            this.btn_Refresh = new DevExpress.XtraEditors.SimpleButton();
-            this.btn_SaveBackups = new DevExpress.XtraEditors.SimpleButton();
-            this.btn_UploadBackups = new DevExpress.XtraEditors.SimpleButton();
             this.btn_Restore = new DevExpress.XtraEditors.SimpleButton();
+            this.btn_UploadBackups = new DevExpress.XtraEditors.SimpleButton();
+            this.btn_SaveBackups = new DevExpress.XtraEditors.SimpleButton();
+            this.btn_Refresh = new DevExpress.XtraEditors.SimpleButton();
+            this.btn_AddGame = new DevExpress.XtraEditors.SimpleButton();
             bar_TopBar = new DevExpress.XtraBars.Bar();
-            ((System.ComponentModel.ISupportInitialize)(this.barManager)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ppm_Data)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.barManager)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemProgressBar1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemPopupContainerEdit1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ppm_Help)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemPopupContainerEdit1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ilb_GamesList)).BeginInit();
             this.pnl_Buttons.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // barManager
-            // 
-            this.barManager.Bars.AddRange(new DevExpress.XtraBars.Bar[] {
-            bar_TopBar,
-            this.bar_BottomBar});
-            this.barManager.DockControls.Add(this.barDockControlTop);
-            this.barManager.DockControls.Add(this.barDockControlBottom);
-            this.barManager.DockControls.Add(this.barDockControlLeft);
-            this.barManager.DockControls.Add(this.barDockControlRight);
-            this.barManager.Form = this;
-            this.barManager.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
-            this.bbi_Data,
-            this.barSubItem1,
-            this.bbi_Help,
-            this.ctx_Status,
-            this.pgb_StatusProgress,
-            this.barButtonItem3,
-            this.btn_BackupLocations,
-            this.btn_OnlineStorages,
-            this.btn_About,
-            this.barButtonItem7});
-            this.barManager.MainMenu = bar_TopBar;
-            this.barManager.MaxItemId = 13;
-            this.barManager.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
-            this.repositoryItemProgressBar1,
-            this.repositoryItemPopupContainerEdit1});
-            this.barManager.StatusBar = this.bar_BottomBar;
             // 
             // bar_TopBar
             // 
@@ -129,14 +101,45 @@
             this.ppm_Data.Manager = this.barManager;
             this.ppm_Data.Name = "ppm_Data";
             // 
-            // bbi_Help
+            // btn_BackupLocations
             // 
-            this.bbi_Help.ActAsDropDown = true;
-            this.bbi_Help.ButtonStyle = DevExpress.XtraBars.BarButtonStyle.DropDown;
-            this.bbi_Help.Caption = "Help";
-            this.bbi_Help.DropDownControl = this.ppm_Help;
-            this.bbi_Help.Id = 2;
-            this.bbi_Help.Name = "bbi_Help";
+            this.btn_BackupLocations.Caption = "Backup Locations";
+            this.btn_BackupLocations.Id = 9;
+            this.btn_BackupLocations.Name = "btn_BackupLocations";
+            // 
+            // btn_OnlineStorages
+            // 
+            this.btn_OnlineStorages.Caption = "Online Storages";
+            this.btn_OnlineStorages.Id = 10;
+            this.btn_OnlineStorages.Name = "btn_OnlineStorages";
+            // 
+            // barManager
+            // 
+            this.barManager.Bars.AddRange(new DevExpress.XtraBars.Bar[] {
+            bar_TopBar,
+            this.bar_BottomBar});
+            this.barManager.DockControls.Add(this.barDockControlTop);
+            this.barManager.DockControls.Add(this.barDockControlBottom);
+            this.barManager.DockControls.Add(this.barDockControlLeft);
+            this.barManager.DockControls.Add(this.barDockControlRight);
+            this.barManager.Form = this;
+            this.barManager.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
+            this.bbi_Data,
+            this.barSubItem1,
+            this.bbi_Help,
+            this.ctx_Status,
+            this.pgb_StatusProgress,
+            this.barButtonItem3,
+            this.btn_BackupLocations,
+            this.btn_OnlineStorages,
+            this.btn_About,
+            this.barButtonItem7});
+            this.barManager.MainMenu = bar_TopBar;
+            this.barManager.MaxItemId = 16;
+            this.barManager.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
+            this.repositoryItemProgressBar1,
+            this.repositoryItemPopupContainerEdit1});
+            this.barManager.StatusBar = this.bar_BottomBar;
             // 
             // bar_BottomBar
             // 
@@ -208,30 +211,14 @@
             this.barSubItem1.Id = 1;
             this.barSubItem1.Name = "barSubItem1";
             // 
-            // barButtonItem3
+            // bbi_Help
             // 
-            this.barButtonItem3.Caption = "s";
-            this.barButtonItem3.Id = 6;
-            this.barButtonItem3.Name = "barButtonItem3";
-            // 
-            // repositoryItemPopupContainerEdit1
-            // 
-            this.repositoryItemPopupContainerEdit1.AutoHeight = false;
-            this.repositoryItemPopupContainerEdit1.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.repositoryItemPopupContainerEdit1.Name = "repositoryItemPopupContainerEdit1";
-            // 
-            // btn_BackupLocations
-            // 
-            this.btn_BackupLocations.Caption = "Backup Locations";
-            this.btn_BackupLocations.Id = 9;
-            this.btn_BackupLocations.Name = "btn_BackupLocations";
-            // 
-            // btn_OnlineStorages
-            // 
-            this.btn_OnlineStorages.Caption = "Online Storages";
-            this.btn_OnlineStorages.Id = 10;
-            this.btn_OnlineStorages.Name = "btn_OnlineStorages";
+            this.bbi_Help.ActAsDropDown = true;
+            this.bbi_Help.ButtonStyle = DevExpress.XtraBars.BarButtonStyle.DropDown;
+            this.bbi_Help.Caption = "Help";
+            this.bbi_Help.DropDownControl = this.ppm_Help;
+            this.bbi_Help.Id = 2;
+            this.bbi_Help.Name = "bbi_Help";
             // 
             // ppm_Help
             // 
@@ -246,11 +233,24 @@
             this.btn_About.Id = 11;
             this.btn_About.Name = "btn_About";
             // 
+            // barButtonItem3
+            // 
+            this.barButtonItem3.Caption = "s";
+            this.barButtonItem3.Id = 6;
+            this.barButtonItem3.Name = "barButtonItem3";
+            // 
             // barButtonItem7
             // 
             this.barButtonItem7.Caption = "Exit";
             this.barButtonItem7.Id = 12;
             this.barButtonItem7.Name = "barButtonItem7";
+            // 
+            // repositoryItemPopupContainerEdit1
+            // 
+            this.repositoryItemPopupContainerEdit1.AutoHeight = false;
+            this.repositoryItemPopupContainerEdit1.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.repositoryItemPopupContainerEdit1.Name = "repositoryItemPopupContainerEdit1";
             // 
             // rtb_Logs
             // 
@@ -292,50 +292,50 @@
             this.pnl_Buttons.TabIndex = 6;
             this.pnl_Buttons.Text = "sidePanel1";
             // 
-            // btn_AddGame
+            // btn_Restore
             // 
-            this.btn_AddGame.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton1.ImageOptions.Image")));
-            this.btn_AddGame.Location = new System.Drawing.Point(50, 22);
-            this.btn_AddGame.Name = "btn_AddGame";
-            this.btn_AddGame.Size = new System.Drawing.Size(126, 35);
-            this.btn_AddGame.TabIndex = 0;
-            this.btn_AddGame.Text = "Add Game";
-            // 
-            // btn_Refresh
-            // 
-            this.btn_Refresh.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton2.ImageOptions.Image")));
-            this.btn_Refresh.Location = new System.Drawing.Point(50, 63);
-            this.btn_Refresh.Name = "btn_Refresh";
-            this.btn_Refresh.Size = new System.Drawing.Size(126, 35);
-            this.btn_Refresh.TabIndex = 1;
-            this.btn_Refresh.Text = "Refresh";
-            // 
-            // btn_SaveBackups
-            // 
-            this.btn_SaveBackups.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton3.ImageOptions.Image")));
-            this.btn_SaveBackups.Location = new System.Drawing.Point(50, 283);
-            this.btn_SaveBackups.Name = "btn_SaveBackups";
-            this.btn_SaveBackups.Size = new System.Drawing.Size(126, 35);
-            this.btn_SaveBackups.TabIndex = 2;
-            this.btn_SaveBackups.Text = "Save Backups";
+            this.btn_Restore.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_Restore.ImageOptions.Image")));
+            this.btn_Restore.Location = new System.Drawing.Point(50, 365);
+            this.btn_Restore.Name = "btn_Restore";
+            this.btn_Restore.Size = new System.Drawing.Size(126, 35);
+            this.btn_Restore.TabIndex = 4;
+            this.btn_Restore.Text = "Restore";
             // 
             // btn_UploadBackups
             // 
-            this.btn_UploadBackups.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton4.ImageOptions.Image")));
+            this.btn_UploadBackups.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_UploadBackups.ImageOptions.Image")));
             this.btn_UploadBackups.Location = new System.Drawing.Point(50, 324);
             this.btn_UploadBackups.Name = "btn_UploadBackups";
             this.btn_UploadBackups.Size = new System.Drawing.Size(126, 35);
             this.btn_UploadBackups.TabIndex = 3;
             this.btn_UploadBackups.Text = "Upload Backups";
             // 
-            // btn_Restore
+            // btn_SaveBackups
             // 
-            this.btn_Restore.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton5.ImageOptions.Image")));
-            this.btn_Restore.Location = new System.Drawing.Point(50, 365);
-            this.btn_Restore.Name = "btn_Restore";
-            this.btn_Restore.Size = new System.Drawing.Size(126, 35);
-            this.btn_Restore.TabIndex = 4;
-            this.btn_Restore.Text = "Restore";
+            this.btn_SaveBackups.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_SaveBackups.ImageOptions.Image")));
+            this.btn_SaveBackups.Location = new System.Drawing.Point(50, 283);
+            this.btn_SaveBackups.Name = "btn_SaveBackups";
+            this.btn_SaveBackups.Size = new System.Drawing.Size(126, 35);
+            this.btn_SaveBackups.TabIndex = 2;
+            this.btn_SaveBackups.Text = "Save Backups";
+            // 
+            // btn_Refresh
+            // 
+            this.btn_Refresh.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_Refresh.ImageOptions.Image")));
+            this.btn_Refresh.Location = new System.Drawing.Point(50, 63);
+            this.btn_Refresh.Name = "btn_Refresh";
+            this.btn_Refresh.Size = new System.Drawing.Size(126, 35);
+            this.btn_Refresh.TabIndex = 1;
+            this.btn_Refresh.Text = "Refresh";
+            // 
+            // btn_AddGame
+            // 
+            this.btn_AddGame.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_AddGame.ImageOptions.Image")));
+            this.btn_AddGame.Location = new System.Drawing.Point(50, 22);
+            this.btn_AddGame.Name = "btn_AddGame";
+            this.btn_AddGame.Size = new System.Drawing.Size(126, 35);
+            this.btn_AddGame.TabIndex = 0;
+            this.btn_AddGame.Text = "Add Game";
             // 
             // MainPage
             // 
@@ -354,11 +354,12 @@
             this.Name = "MainPage";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Keep My Process";
-            ((System.ComponentModel.ISupportInitialize)(this.barManager)).EndInit();
+            this.Load += new System.EventHandler(this.MainPage_Load);
             ((System.ComponentModel.ISupportInitialize)(this.ppm_Data)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.barManager)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemProgressBar1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemPopupContainerEdit1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ppm_Help)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemPopupContainerEdit1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ilb_GamesList)).EndInit();
             this.pnl_Buttons.ResumeLayout(false);
             this.ResumeLayout(false);

@@ -178,8 +178,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Database\AppDbContext.cs" />
+    <Compile Include="Database\Entities\BackupLocation.cs" />
     <Compile Include="Database\Entities\BaseEntity.cs" />
     <Compile Include="Database\Entities\Game.cs" />
+    <Compile Include="Database\Entities\UploadLocation.cs" />
+    <Compile Include="Database\Enums\UploadLocationEnums.cs" />
+    <Compile Include="Database\Seeds\BackupLocationsSeeder.cs" />
     <Compile Include="MainPage.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -189,6 +193,10 @@
     <Compile Include="Migrations\20240820134729_Init.cs" />
     <Compile Include="Migrations\20240820134729_Init.Designer.cs">
       <DependentUpon>20240820134729_Init.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\20240820202359_Locations.cs" />
+    <Compile Include="Migrations\20240820202359_Locations.Designer.cs">
+      <DependentUpon>20240820202359_Locations.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\AppDbContextModelSnapshot.cs" />
     <Compile Include="Program.cs" />
@@ -221,6 +229,7 @@
   <ItemGroup>
     <Content Include="KeepMyProcess.ico" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\SQLitePCLRaw.lib.e_sqlite3.2.0.4\build\net461\SQLitePCLRaw.lib.e_sqlite3.targets" Condition="Exists('..\packages\SQLitePCLRaw.lib.e_sqlite3.2.0.4\build\net461\SQLitePCLRaw.lib.e_sqlite3.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
