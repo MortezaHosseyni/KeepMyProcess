@@ -1,9 +1,10 @@
-﻿using KeepMyProcess.Database.Seeds;
+﻿using DevExpress.XtraEditors;
+using KeepMyProcess.Database.Seeds;
 using System.Windows.Forms;
 
 namespace KeepMyProcess
 {
-    public partial class MainPage : DevExpress.XtraEditors.XtraForm
+    public partial class MainPage : XtraForm
     {
         public MainPage()
         {
@@ -18,6 +19,12 @@ namespace KeepMyProcess
             {
                 MessageBox.Show("Error occurred when connecting to database.", "Database Error!", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private void btn_AddGame_Click(object sender, System.EventArgs e)
+        {
+            AddGameForm addGameForm = new AddGameForm();
+            addGameForm.ShowDialog();
         }
     }
 }

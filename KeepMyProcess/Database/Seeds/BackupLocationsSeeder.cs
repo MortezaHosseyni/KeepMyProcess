@@ -36,12 +36,11 @@ namespace KeepMyProcess.Database.Seeds
                     return true;
                 }
 
-                return false;
+                return true;
             }
-            catch (Exception ex)
+            catch (Exception)
             {
-                Console.WriteLine(ex);
-                throw;
+                return false;
             }
         }
     }

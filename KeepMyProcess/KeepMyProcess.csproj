@@ -177,6 +177,12 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddGameForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddGameForm.Designer.cs">
+      <DependentUpon>AddGameForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Database\AppDbContext.cs" />
     <Compile Include="Database\Entities\BackupLocation.cs" />
     <Compile Include="Database\Entities\BaseEntity.cs" />
@@ -201,6 +207,9 @@
     <Compile Include="Migrations\AppDbContextModelSnapshot.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AddGameForm.resx">
+      <DependentUpon>AddGameForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MainPage.resx">
       <DependentUpon>MainPage.cs</DependentUpon>
     </EmbeddedResource>

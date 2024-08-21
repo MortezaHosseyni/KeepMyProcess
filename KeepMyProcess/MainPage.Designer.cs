@@ -135,7 +135,7 @@
             this.btn_About,
             this.barButtonItem7});
             this.barManager.MainMenu = bar_TopBar;
-            this.barManager.MaxItemId = 16;
+            this.barManager.MaxItemId = 17;
             this.barManager.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
             this.repositoryItemProgressBar1,
             this.repositoryItemPopupContainerEdit1});
@@ -179,31 +179,35 @@
             this.barDockControlTop.Dock = System.Windows.Forms.DockStyle.Top;
             this.barDockControlTop.Location = new System.Drawing.Point(0, 0);
             this.barDockControlTop.Manager = this.barManager;
-            this.barDockControlTop.Size = new System.Drawing.Size(990, 20);
+            this.barDockControlTop.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.barDockControlTop.Size = new System.Drawing.Size(1155, 25);
             // 
             // barDockControlBottom
             // 
             this.barDockControlBottom.CausesValidation = false;
             this.barDockControlBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.barDockControlBottom.Location = new System.Drawing.Point(0, 598);
+            this.barDockControlBottom.Location = new System.Drawing.Point(0, 736);
             this.barDockControlBottom.Manager = this.barManager;
-            this.barDockControlBottom.Size = new System.Drawing.Size(990, 22);
+            this.barDockControlBottom.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.barDockControlBottom.Size = new System.Drawing.Size(1155, 27);
             // 
             // barDockControlLeft
             // 
             this.barDockControlLeft.CausesValidation = false;
             this.barDockControlLeft.Dock = System.Windows.Forms.DockStyle.Left;
-            this.barDockControlLeft.Location = new System.Drawing.Point(0, 20);
+            this.barDockControlLeft.Location = new System.Drawing.Point(0, 25);
             this.barDockControlLeft.Manager = this.barManager;
-            this.barDockControlLeft.Size = new System.Drawing.Size(0, 578);
+            this.barDockControlLeft.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.barDockControlLeft.Size = new System.Drawing.Size(0, 711);
             // 
             // barDockControlRight
             // 
             this.barDockControlRight.CausesValidation = false;
             this.barDockControlRight.Dock = System.Windows.Forms.DockStyle.Right;
-            this.barDockControlRight.Location = new System.Drawing.Point(990, 20);
+            this.barDockControlRight.Location = new System.Drawing.Point(1155, 25);
             this.barDockControlRight.Manager = this.barManager;
-            this.barDockControlRight.Size = new System.Drawing.Size(0, 578);
+            this.barDockControlRight.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.barDockControlRight.Size = new System.Drawing.Size(0, 711);
             // 
             // barSubItem1
             // 
@@ -256,9 +260,10 @@
             // 
             this.rtb_Logs.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.rtb_Logs.Location = new System.Drawing.Point(12, 445);
+            this.rtb_Logs.Location = new System.Drawing.Point(14, 548);
+            this.rtb_Logs.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.rtb_Logs.Name = "rtb_Logs";
-            this.rtb_Logs.Size = new System.Drawing.Size(966, 147);
+            this.rtb_Logs.Size = new System.Drawing.Size(1126, 180);
             this.rtb_Logs.TabIndex = 4;
             this.rtb_Logs.Text = "";
             // 
@@ -268,9 +273,10 @@
             | System.Windows.Forms.AnchorStyles.Left)));
             this.ilb_GamesList.HtmlTemplates.AddRange(new DevExpress.Utils.Html.HtmlTemplate[] {
             this.htmlTemplate1});
-            this.ilb_GamesList.Location = new System.Drawing.Point(12, 26);
+            this.ilb_GamesList.Location = new System.Drawing.Point(14, 32);
+            this.ilb_GamesList.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ilb_GamesList.Name = "ilb_GamesList";
-            this.ilb_GamesList.Size = new System.Drawing.Size(723, 413);
+            this.ilb_GamesList.Size = new System.Drawing.Size(844, 508);
             this.ilb_GamesList.TabIndex = 5;
             // 
             // htmlTemplate1
@@ -286,62 +292,69 @@
             this.pnl_Buttons.Controls.Add(this.btn_SaveBackups);
             this.pnl_Buttons.Controls.Add(this.btn_Refresh);
             this.pnl_Buttons.Controls.Add(this.btn_AddGame);
-            this.pnl_Buttons.Location = new System.Drawing.Point(741, 26);
+            this.pnl_Buttons.Location = new System.Drawing.Point(864, 32);
+            this.pnl_Buttons.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pnl_Buttons.Name = "pnl_Buttons";
-            this.pnl_Buttons.Size = new System.Drawing.Size(237, 413);
+            this.pnl_Buttons.Size = new System.Drawing.Size(276, 508);
             this.pnl_Buttons.TabIndex = 6;
             this.pnl_Buttons.Text = "sidePanel1";
             // 
             // btn_Restore
             // 
             this.btn_Restore.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_Restore.ImageOptions.Image")));
-            this.btn_Restore.Location = new System.Drawing.Point(50, 365);
+            this.btn_Restore.Location = new System.Drawing.Point(58, 449);
+            this.btn_Restore.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btn_Restore.Name = "btn_Restore";
-            this.btn_Restore.Size = new System.Drawing.Size(126, 35);
+            this.btn_Restore.Size = new System.Drawing.Size(147, 43);
             this.btn_Restore.TabIndex = 4;
             this.btn_Restore.Text = "Restore";
             // 
             // btn_UploadBackups
             // 
             this.btn_UploadBackups.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_UploadBackups.ImageOptions.Image")));
-            this.btn_UploadBackups.Location = new System.Drawing.Point(50, 324);
+            this.btn_UploadBackups.Location = new System.Drawing.Point(58, 399);
+            this.btn_UploadBackups.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btn_UploadBackups.Name = "btn_UploadBackups";
-            this.btn_UploadBackups.Size = new System.Drawing.Size(126, 35);
+            this.btn_UploadBackups.Size = new System.Drawing.Size(147, 43);
             this.btn_UploadBackups.TabIndex = 3;
             this.btn_UploadBackups.Text = "Upload Backups";
             // 
             // btn_SaveBackups
             // 
             this.btn_SaveBackups.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_SaveBackups.ImageOptions.Image")));
-            this.btn_SaveBackups.Location = new System.Drawing.Point(50, 283);
+            this.btn_SaveBackups.Location = new System.Drawing.Point(58, 348);
+            this.btn_SaveBackups.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btn_SaveBackups.Name = "btn_SaveBackups";
-            this.btn_SaveBackups.Size = new System.Drawing.Size(126, 35);
+            this.btn_SaveBackups.Size = new System.Drawing.Size(147, 43);
             this.btn_SaveBackups.TabIndex = 2;
             this.btn_SaveBackups.Text = "Save Backups";
             // 
             // btn_Refresh
             // 
             this.btn_Refresh.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_Refresh.ImageOptions.Image")));
-            this.btn_Refresh.Location = new System.Drawing.Point(50, 63);
+            this.btn_Refresh.Location = new System.Drawing.Point(58, 78);
+            this.btn_Refresh.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btn_Refresh.Name = "btn_Refresh";
-            this.btn_Refresh.Size = new System.Drawing.Size(126, 35);
+            this.btn_Refresh.Size = new System.Drawing.Size(147, 43);
             this.btn_Refresh.TabIndex = 1;
             this.btn_Refresh.Text = "Refresh";
             // 
             // btn_AddGame
             // 
             this.btn_AddGame.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_AddGame.ImageOptions.Image")));
-            this.btn_AddGame.Location = new System.Drawing.Point(50, 22);
+            this.btn_AddGame.Location = new System.Drawing.Point(58, 27);
+            this.btn_AddGame.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btn_AddGame.Name = "btn_AddGame";
-            this.btn_AddGame.Size = new System.Drawing.Size(126, 35);
+            this.btn_AddGame.Size = new System.Drawing.Size(147, 43);
             this.btn_AddGame.TabIndex = 0;
             this.btn_AddGame.Text = "Add Game";
+            this.btn_AddGame.Click += new System.EventHandler(this.btn_AddGame_Click);
             // 
             // MainPage
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(990, 620);
+            this.ClientSize = new System.Drawing.Size(1155, 763);
             this.Controls.Add(this.pnl_Buttons);
             this.Controls.Add(this.ilb_GamesList);
             this.Controls.Add(this.rtb_Logs);
@@ -350,6 +363,7 @@
             this.Controls.Add(this.barDockControlBottom);
             this.Controls.Add(this.barDockControlTop);
             this.IconOptions.Image = ((System.Drawing.Image)(resources.GetObject("MainPage.IconOptions.Image")));
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MinimumSize = new System.Drawing.Size(992, 652);
             this.Name = "MainPage";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
